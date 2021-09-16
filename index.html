@@ -11,13 +11,12 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <title>Web Design</title>
 </head>
-
-<body>
     <header>
         <div class="container">
-            <nav class="flex items-center justify-between">
+            <nav id="main-nav" class="flex items-center justify-between">
                 <div class="navleft flex-1 ">
                     <div class="branding">
                         <a href="index.html"><img src="images/logo.png" alt=""></a>
@@ -31,6 +30,7 @@
 
                 </div>
             </nav>
+
             <div class="hero flex items-center">
                 <div class="heroleft">
                     <h1>Lorem ipsum dolor sit amet.</h1>
@@ -41,6 +41,8 @@
                     <img src="images/office.jpg" alt="">
                 </div>
             </div>
+            <div class="scroldown"><a class="down" href="#"><i class="bi-mouse"
+                        style="font-size: 2rem; color:#f2f2f2;"></i></a></div>
         </div>
     </header>
     <section class="profileSection">
@@ -81,59 +83,72 @@
         </div>
     </section>
     <section class="testimonials">
-        <div class="wrapper">
-            <h1>Testimonials</h1>
-            <div class="carousel owl-carousel">
-               <div class="cards card-1">
-                  <p>Quos adipisci nemo voluptas facilis tempora ut reprehenderit cum tempore consectetur, provident, possimus dolorem sit tenetur ullam placeat praesentium assumenda similique autem minima</p>
-                  <h3>Lorem Ipsum</h3>
-                  <h5>Designation</h5>
-               </div>
-               <div class="cards card-1">
-                <p>Dolores recusandae eum eligendi. Nesciunt, magnam qui veniam velitexplicabo inventore nisi rerum eius corrupti sunt. Nostrum reiciendis sit eligendi nisi tempore neque miente optiolaudantium et quia a fuga</p>
-                <h3>Lorem Ipsum</h3>
-                <h5>Designation</h5>
-               </div>
-               <div class="cards card-1">
-                <p>minimaQempore consectetur, provident, possimus dolorem sit tenetur ullamuos adipisci nemo voluptas facilis tempora ut reprehenderit cumt placeat praesentium assumenda similique autem </p>
-                <h3>Lorem Ipsum</h3>
-                <h5>Designation</h5>
-               </div>
-               <div class="cards card-1">
-                <p> labore corrupti possimus exercitationem alias et pariatur? Quasi est veritatis quaerat soluta optio similique doloremque adipisci, porro perspiciatis exercitationem necessitatibus vero rem!</p>
-                <h3>Lorem Ipsum</h3>
-                <h5>Designation</h5>
-               </div>
-               <div class="cards card-1">
-                <p> Facilis, similique culpa esse temporibus dolorum minus debitis soluta iste cum aperiam expedita corrupti eligendi veritatis possimus labore nobis ab rerum quos odio, id itaque accusamus? S</p>
-                <h3>Lorem Ipsum</h3>
-                <h5>Designation</h5>
-               </div>
+        <div class="container">
+            <div class="wrapper">
+                <h1>Testimonials</h1>
+                <div class="carousel owl-carousel">
+                    <div class="cards card-1">
+                        <p>Quos adipisci nemo voluptas facilis tempora ut reprehenderit cum tempore consectetur,
+                            provident, possimus dolorem sit tenetur ullam placeat praesentium assumenda similique autem
+                            minima</p>
+                        <h3>Lorem Ipsum</h3>
+                        <h5>Designation</h5>
+                    </div>
+                    <div class="cards card-1">
+                        <p>Dolores recusandae eum eligendi. Nesciunt, magnam qui veniam velitexplicabo inventore nisi
+                            rerum eius corrupti sunt. Nostrum reiciendis sit eligendi nisi tempore neque miente
+                            optiolaudantium et quia a fuga</p>
+                        <h3>Lorem Ipsum</h3>
+                        <h5>Designation</h5>
+                    </div>
+                    <div class="cards card-1">
+                        <p>minimaQempore consectetur, provident, possimus dolorem sit tenetur ullamuos adipisci nemo
+                            voluptas facilis tempora ut reprehenderit cumt placeat praesentium assumenda similique autem
+                        </p>
+                        <h3>Lorem Ipsum</h3>
+                        <h5>Designation</h5>
+                    </div>
+                    <div class="cards card-1">
+                        <p> labore corrupti possimus exercitationem alias et pariatur? Quasi est veritatis quaerat
+                            soluta optio similique doloremque adipisci, porro perspiciatis exercitationem necessitatibus
+                            vero rem!</p>
+                        <h3>Lorem Ipsum</h3>
+                        <h5>Designation</h5>
+                    </div>
+                    <div class="cards card-1">
+                        <p> Facilis, similique culpa esse temporibus dolorum minus debitis soluta iste cum aperiam
+                            expedita corrupti eligendi veritatis possimus labore nobis ab rerum quos odio, id itaque
+                            accusamus? S</p>
+                        <h3>Lorem Ipsum</h3>
+                        <h5>Designation</h5>
+                    </div>
+                </div>
             </div>
-         </div>
-         <script>
-            $(".carousel").owlCarousel({
-              margin: 2,
-              loop: true,
-              autoplay: true,
-              autoplayTimeout: 2000,
-              autoplayHoverPause: true,
-              responsive: {
-                0:{
-                  items:1,
-                  nav: false
-                },
-                600:{
-                  items:2,
-                  nav: false
-                },
-                1000:{
-                  items:3,
-                  nav: false
-                }
-              }
-            });
-         </script>
+
+            <script>
+                $(".carousel").owlCarousel({
+                    margin: 20,
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                            nav: false
+                        },
+                        600: {
+                            items: 2,
+                            nav: false
+                        },
+                        1000: {
+                            items: 3,
+                            nav: false
+                        }
+                    }
+                });
+            </script>
+        </div>
     </section>
     <section class="querysection">
         <div class="container">
@@ -165,39 +180,39 @@
                 </div>
             </div>
         </div>
-
     </section>
     <footer class="footerclass">
-        <div class="footerlinks">
-            <a href="">Lorem Ipsum</a>
-            <a href="">Lorem Ipsum</a>
-            <a href="">Lorem</a>
-            <a href="">Lorem Ipsum</a>
-            <hr style="width:100%;text-align:center;margin-top: 1rem;">
-        </div>
-        <div class="footercontent">
-            <img src="images/logo.png" alt="">
-            <div class="footersocial">
-                <a href=""><img src="images/twitter.png" alt=""></a>
-                <a href=""><img src="images/linkedin.png" alt=""></a>
-                <a href=""><img src="images/insta.png" alt=""></a>
-                <a href=""><img src="images/facebook.png" alt=""></a>
+        <div class="container">
+            <div class="footerlinks">
+                <a href="">Lorem Ipsum</a>
+                <a href="">Lorem Ipsum</a>
+                <a href="">Lorem</a>
+                <a href="">Lorem Ipsum</a>
+                <hr style="width:100%;text-align:center;margin-top: 1rem;">
             </div>
+            <div class="footercontent">
+                <img src="images/logo.png" alt="">
+                <div class="footersocial">
+                    <a href=""><img src="images/twitter.png" alt=""></a>
+                    <a href=""><img src="images/linkedin.png" alt=""></a>
+                    <a href=""><img src="images/insta.png" alt=""></a>
+                    <a href=""><img src="images/facebook.png" alt=""></a>
+                </div>
 
-        </div>
-        <div class="policy">
-            <p> <a href="">Terms of service-</a> <a href="">Privacy Policy-</a> &#169; 2021 TritaTech</p>
-            <p>Website by TritaTech</p>
-            <button class="scrollToTopBtn"><span class="material-icons">
+            </div>
+            <div class="policy">
+                <p> <a href="">Terms of service-</a> <a href="">Privacy Policy-</a> &#169; 2021 TritaTech</p>
+                <p>Website by TritaTech</p>
+                <!-- <button class="scrollToTopBtn"><span class="material-icons">
                 expand_less
-                </span></button>
+                </span></button> -->
+                <a class="up" href="#"><span class="material-icons">
+                        expand_less
+                    </span></a>
                 <p>Back to Top</p>
+            </div>
         </div>
-
     </footer>
-
-
-
 </body>
 <script type="text/javascript" src="js/script.js"></script>
 
