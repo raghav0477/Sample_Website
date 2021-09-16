@@ -1,0 +1,215 @@
+@import'utilities.css';
+:root{
+    --primary:#212A64;
+    --pure:#ffffff;
+    --tertiary:#63ccb3;
+    --extra:#3a3e55;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    max-width: 1300px;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+header{
+    background-color: var(--primary);
+    height: 800px;
+}
+header nav{
+    padding: 2rem;
+    background-color:var(--primary);
+}
+header nav .branding img{
+    width: 50px; 
+}
+
+header nav .navright a{
+    color: var(--pure);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+header nav .navright a:hover{
+    color: var(--tertiary);
+}
+
+
+/*********** Hero Section **********/
+.hero .heroright img{
+    padding: 2rem;
+    width: 700px;
+}
+.hero .heroleft{
+    color: var(--pure);
+}
+.hero .heroleft h1{
+    font-size: 2.5rem;
+}
+
+
+section.profileSection{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+    /* margin-bottom: 6rem; */
+}
+
+section.profileSection .psectionleft{
+    margin-right: 2.5rem;
+}
+section.profileSection .psectionleft h3{
+    color: var(--primary);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+section.profileSection .psectionleft p{
+    color: grey;
+    font-size: 1.3rem;
+}
+.profileSection .psectionright img{
+    margin: 3.5rem 3rem;
+    width: 40rem;
+}
+
+section.profileSection h4{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-family: Poppins;
+    font-weight: 400;
+    word-spacing: 1rem;
+}
+
+.testimonials{
+    background-color: #212A64;
+}
+.testimonials .testhead{
+    align-items: center;
+    font-size: 4rem;
+}
+.testcard{
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    grid-gap: 5px;
+}
+.card{
+    border: 2px solid black;
+    height: 100%;
+    border-radius: 2rem;
+    padding: 1rem;
+    width: 50%;
+    text-align: center;
+    background-color: #636996;
+    color: var(--pure);
+    /* margin: 1rem; */
+}
+.card p{
+    color: rgb(199, 199, 199);
+    padding: 2rem;
+}
+
+.card h6{
+    margin-top: 1rem;
+}
+
+section .querysection{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+    /* margin-bottom: 6rem; */
+}
+.querysection .querys img{
+    margin: 3.5rem 3rem;
+    width: 40rem;
+}
+
+.querysection .querys h3{
+    color: var(--primary);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.querysection .querys p{
+    color: grey;
+    font-size: 1.3rem;
+}
+
+.querysection .question{
+    text-align: center;
+}
+.querysection .question h1{
+    color: var(--primary);
+    font-size: 2rem;
+    padding: 2rem;
+}
+.querysection .question p{
+    color: gray;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.querysection .question .social a{
+    color: rgba(101, 101, 252, 0.747);
+    padding:2rem 1.5rem;
+
+}
+.querysection .question .social{
+    padding:2rem 2rem;
+}
+.querysection .question .social a span{
+    font-size: 3rem;
+}
+.footerclass{
+    text-align: center;
+    background-color: var(--extra);
+}
+.footerclass .footerlinks{
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+.footerclass .footerlinks a{
+    text-decoration: none;
+    color: var(--pure);
+    padding: 2rem;
+}
+.footerclass .footercontent img{
+    padding: 1rem;
+    /* color: var(--pure); */
+}
+.footerclass .policy p{
+    color: var(--pure);
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    
+}
+.footerclass .policy a{
+    color: var(--pure);
+    text-decoration: none;
+}
+.scrollToTopBtn {
+    background-color: var(--extra);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    width: 48px;
+    z-index: 100;
+    transition: all .5s ease
+  }
+      
+  .showBtn {
+    opacity: 1;
+    transform: translateY(0)
+  }
