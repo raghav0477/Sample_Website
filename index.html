@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <title>Web Design</title>
 </head>
 
@@ -78,28 +81,59 @@
         </div>
     </section>
     <section class="testimonials">
-        <div class="testhead">Testimonials</div>
-        <div class="testcard">
-            <div class="card">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem culpa iusto aspernatur,
-                    quaerat repellendus labore consequuntur rem nobis est ratione aliquid.</p>
-                <h3>Lorem ipsum.</h3>
-                <h6>Designation</h6>
+        <div class="wrapper">
+            <h1>Testimonials</h1>
+            <div class="carousel owl-carousel">
+               <div class="cards card-1">
+                  <p>Quos adipisci nemo voluptas facilis tempora ut reprehenderit cum tempore consectetur, provident, possimus dolorem sit tenetur ullam placeat praesentium assumenda similique autem minima</p>
+                  <h3>Lorem Ipsum</h3>
+                  <h5>Designation</h5>
+               </div>
+               <div class="cards card-1">
+                <p>Dolores recusandae eum eligendi. Nesciunt, magnam qui veniam velitexplicabo inventore nisi rerum eius corrupti sunt. Nostrum reiciendis sit eligendi nisi tempore neque miente optiolaudantium et quia a fuga</p>
+                <h3>Lorem Ipsum</h3>
+                <h5>Designation</h5>
+               </div>
+               <div class="cards card-1">
+                <p>minimaQempore consectetur, provident, possimus dolorem sit tenetur ullamuos adipisci nemo voluptas facilis tempora ut reprehenderit cumt placeat praesentium assumenda similique autem </p>
+                <h3>Lorem Ipsum</h3>
+                <h5>Designation</h5>
+               </div>
+               <div class="cards card-1">
+                <p> labore corrupti possimus exercitationem alias et pariatur? Quasi est veritatis quaerat soluta optio similique doloremque adipisci, porro perspiciatis exercitationem necessitatibus vero rem!</p>
+                <h3>Lorem Ipsum</h3>
+                <h5>Designation</h5>
+               </div>
+               <div class="cards card-1">
+                <p> Facilis, similique culpa esse temporibus dolorum minus debitis soluta iste cum aperiam expedita corrupti eligendi veritatis possimus labore nobis ab rerum quos odio, id itaque accusamus? S</p>
+                <h3>Lorem Ipsum</h3>
+                <h5>Designation</h5>
+               </div>
             </div>
-            <div class="card">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem culpa iusto aspernatur,
-                    quaerat repellendus labore consequuntur rem nobis est ratione aliquid.</p>
-                <h3>Lorem ipsum.</h3>
-                <h6>Designation</h6>
-            </div>
-            <div class="card">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem culpa iusto aspernatur,
-                    quaerat repellendus labore consequuntur rem nobis est ratione aliquid.</p>
-                <h3>Lorem ipsum.</h3>
-                <h6>Designation</h6>
-            </div>
-        </div>
-
+         </div>
+         <script>
+            $(".carousel").owlCarousel({
+              margin: 2,
+              loop: true,
+              autoplay: true,
+              autoplayTimeout: 2000,
+              autoplayHoverPause: true,
+              responsive: {
+                0:{
+                  items:1,
+                  nav: false
+                },
+                600:{
+                  items:2,
+                  nav: false
+                },
+                1000:{
+                  items:3,
+                  nav: false
+                }
+              }
+            });
+         </script>
     </section>
     <section class="querysection">
         <div class="container">
