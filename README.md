@@ -1,2 +1,2 @@
-# this is the solution code for an internshipassignment 
+# This is the solution code for an internship assignment 
 ## Solution2
